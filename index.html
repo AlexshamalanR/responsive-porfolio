@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- ========CSS Files======== -->
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/skins/color-1.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- ====== Style Switcher ====== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class=" alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class=" alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class=" alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class=" alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class=" alternate-style" title="color-5" disabled>
+     <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
     <!-- ==== Main Container Start ==== -->
@@ -21,11 +28,11 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
          </div>
 
@@ -34,7 +41,7 @@
           <div class="main-content">
 
             <!-- === Home Section Start === -->
-             <section class="home section hidden">
+             <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -53,7 +60,7 @@
              </section>
             <!-- === Home Section End === -->
             <!-- === About Section Start === -->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -233,7 +240,7 @@
             </section>
             <!-- === About Section End === -->
             <!-- === Services Section Start === -->
-             <section class="service section hidden">
+             <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -312,7 +319,7 @@
              </section>
             <!-- === Services Section End === -->
             <!-- === Portfolio Section Start === -->
-             <section class="portfolio section">
+             <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -384,11 +391,81 @@
              </section>
             <!-- === Portfolio Section End === -->
             <!-- === Contact Section Start === -->
-             <section class="contact section">
+             <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- ==== contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us on</h4>
+                            <p>+91 9110911705</p>
+                        </div>
+                        <!-- ==== contact info item end ==== -->
+                        <!-- ==== contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Bangaluru</p>
+                        </div>
+                        <!-- ==== contact info item end ==== -->
+                        <!-- ==== contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>alexshamalan06@gmail.com</p>
+                        </div>
+                        <!-- ==== contact info item end ==== -->
+                        <!-- ==== contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                        <!-- ==== contact info item end ==== -->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M RESPONSIVE TO MESSAGES</h4>
+                    <!--  ======== Contact Form ======== -->
+                      <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,6 +478,27 @@
      </div>
 
     <!-- ==== Main Container End ==== -->
+    <!-- ===== Style Switcher Start ===== -->
+     <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+     </div>
+    <!-- ===== Style Switcher End ===== -->
+    <!-- ===== JS Files ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
